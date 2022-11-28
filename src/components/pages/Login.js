@@ -1,7 +1,7 @@
 import {Link, useNavigate} from 'react-router-dom'
 import axios from "axios"
 import { useContext, useState } from "react"
-import UserContext from '../context/UserContext'
+import UserContext from '../contexts/UserContext'
 
 export default function Login (){
     const [email, setEmail] = useState("");
@@ -22,7 +22,7 @@ export default function Login (){
     }
 
     return (
-        <div className="">
+        <div className="inputLogin">
             <form>
                 <input type="text" placeholder='email' onChange={e => setEmail(e.target.value)}></input><br />
                 <input type="password" placeholder='senha' onChange={e => setPassword(e.target.value)}></input><br />

@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Cadastro from './components/pages/Cadastro'
-import Home from './components/pages/Home'
-import Login from './components/pages/Login'
-import UserContext from "./context/UserContext"
+import Cadastro from './pages/Cadastro'
+import Home from './pages/Home'
+import Login from './pages/Login'
+import UserContext from './contexts/UserContext'
 import { useState } from 'react'
 
 export default function App (){
@@ -10,7 +10,7 @@ export default function App (){
     return (
         <div className="App">
             <UserContext.Provider value={{ user, setUser }}>
-            <header className="App-header">The dress Maker
+            <header className="App-header">The dress Maker 
             <BrowserRouter>
                 <Routes>
                     <Route>
