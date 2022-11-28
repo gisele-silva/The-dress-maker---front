@@ -7,7 +7,7 @@ export default function Login (){
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const {setUser} = useContext(UserContext);
-    const navigator = useNavigate();
+    const navigator = useNavigate;
 
     async function submitar (e) {
         e.preventDefault()
