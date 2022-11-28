@@ -7,7 +7,7 @@ export default function Login (){
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const {setUser} = useContext(UserContext);
-    const navigator = useNavigate
+    const navigator = useNavigate();
 
     async function submitar (e) {
         e.preventDefault()
@@ -27,7 +27,7 @@ export default function Login (){
                 <input type="text" placeholder='email' onChange={e => setEmail(e.target.value)}></input><br />
                 <input type="password" placeholder='senha' onChange={e => setPassword(e.target.value)}></input><br />
                 <button type="submit" onClick={submitar}>Entrar</button>
-                <p><Link to="/cadastro" style={{color: 'white', fontSize: 14}}>Primeira vez? Cadastrate-se!</Link></p>
+                <p><Link to="/cadastro" style={{color: 'white', fontSize: 14}}>Primeira vez? Cadastre-se!</Link></p>
             </form>
         </div>
     )
